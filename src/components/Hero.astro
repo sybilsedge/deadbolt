@@ -1,0 +1,104 @@
+---
+import { siteConfig } from '../config/site';
+---
+
+<section id="home" class="relative bg-slate-950 text-white overflow-hidden py-24 lg:py-36 min-h-[85vh] flex items-center">
+  <!-- Background Image with Overlay Gradient -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src="/images/hero-property.png" 
+      alt="Immaculate renovated apartment turnover interior" 
+      class="w-full h-full object-cover object-center opacity-30 scale-105 transform animate-fade-in"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/60"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/80"></div>
+  </div>
+
+  <!-- Decorative Subtle Grid Overlay -->
+  <div class="absolute inset-0 bg-[radial-gradient(#D97706_1px,transparent_1px)] [background-size:32px_32px] opacity-10 pointer-events-none z-0"></div>
+
+  <!-- Hero Content Container -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      
+      <!-- Top Pill Tag -->
+      <div class="inline-flex items-center gap-2 bg-slate-900/90 border border-amber-500/30 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-amber-400 mb-6 shadow-lg">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        Hampton Roads Turnkey Specialists
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1] mb-6">
+        VACANT UNITS READY IN <span class="gold-gradient-text">DAYS</span>, NOT WEEKS
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-8 max-w-2xl">
+        {siteConfig.heroSubheadline}
+      </p>
+
+      <!-- CTA Buttons & Trust Indicators -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
+        <a 
+          href="#quote" 
+          class="gold-gradient-bg text-slate-950 font-bold text-base px-8 py-4 rounded-xl shadow-xl hover:shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 uppercase tracking-wider group"
+        >
+          <span>REQUEST TURNOVER QUOTE</span>
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+        <a 
+          href="#services" 
+          class="bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 font-semibold text-base px-6 py-4 rounded-xl transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
+        >
+          <span>EXPLORE SERVICES</span>
+          <svg class="w-4 h-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Key Trust Metrics / Micro Badges -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 text-xs sm:text-sm text-slate-400">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-slate-200">24-Hr Quotes</div>
+            <div class="text-[11px] text-slate-400">Fast local estimates</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-slate-200">100% Insured</div>
+            <div class="text-[11px] text-slate-400">Fully bonded & covered</div>
+          </div>
+        </div>
+
+        <div class="col-span-2 sm:col-span-1 flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="font-bold text-slate-200">Windsor & Regional</div>
+            <div class="text-[11px] text-slate-400">Serving Hampton Roads</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
