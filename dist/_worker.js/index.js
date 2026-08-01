@@ -2,7 +2,7 @@ globalThis.process ??= {}; globalThis.process.env ??= {};
 import { renderers } from './renderers.mjs';
 import { a as actions } from './chunks/_noop-actions_Dk2yPKP3.mjs';
 import { c as createExports } from './chunks/server_Bt47YTPd.mjs';
-import { manifest } from './manifest_C67BmJVN.mjs';
+import { manifest } from './manifest_GSrrG7eB.mjs';
 
 const serverIslandMap = new Map();;
 

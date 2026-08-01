@@ -6,6 +6,7 @@
   "exclude": [
     "/",
     "/_astro/*",
+    "/.assetsignore",
     "/favicon.svg",
     "/images/hero-property.png",
     "/images/owner-avatar.png"
