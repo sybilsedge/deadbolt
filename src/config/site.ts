@@ -67,11 +67,11 @@ export const siteConfig: SiteConfig = {
   contact: {
     phone: "(757) 555-0101",
     phoneRaw: "7575550101",
-    email: "info@tidewaterTurnkey.com"
+    email: "info@tidewaterturnkey.com"
   },
   badgeText: "VETERAN-OWNED BUSINESS",
   owner: {
-    name: "Marcus Vance",
+    name: "Sybil Melton",
     title: "OWNER | NAVY VETERAN",
     bio: "Dedicated to military precision, fast turnaround schedules, and meticulous property preparation for Hampton Roads property managers."
   },
