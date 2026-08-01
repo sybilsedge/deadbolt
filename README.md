@@ -1,6 +1,6 @@
-# Tidewater Turkey Solutions - Property Turnover Services Website
+# Tidewater Turnkey Solutions - Property Turnover Services Website
 
-A lightweight, performant, mobile-responsive business profile website for **Tidewater Turkey Solutions** (or **Turkey Home Solutions**), built with **Astro**, **Tailwind CSS v4**, and configured for **Cloudflare Pages** deployment.
+A lightweight, performant, mobile-responsive business profile website for **Tidewater Turnkey Solutions** (or **Turnkey Home Solutions**), built with **Astro**, **Tailwind CSS v4**, and configured for **Cloudflare Pages** deployment.
 
 ---
 
@@ -51,8 +51,8 @@ All business metadata, contact details, service features, and navigation links c
 
 ```typescript
 export const siteConfig = {
-  name: "Tidewater Turkey Solutions",
-  altNames: ["Turkey Home Solutions", "Tidewater Turnkey Solutions"],
+  name: "Tidewater Turnkey Solutions",
+  altNames: ["Turnkey Home Solutions", "Tidewater Turnkey Solutions"],
   tagline: "Premium Make-Ready & Rental Turnover Services for Hampton Roads Property Managers",
   location: {
     city: "Windsor",
@@ -62,7 +62,7 @@ export const siteConfig = {
   },
   contact: {
     phone: "(757) 555-0101",
-    email: "info@tidewaterturkey.com"
+    email: "info@tidewaterTurnkey.com"
   },
   badgeText: "VETERAN-OWNED BUSINESS",
   // ...
@@ -106,5 +106,5 @@ npm run build
 
 ### Option B: Direct Deployment via Wrangler CLI
 ```bash
-npx wrangler pages deploy dist --project-name=tidewater-turkey-solutions
+npx wrangler pages deploy dist --project-name=tidewater-Turnkey-solutions
 ```
