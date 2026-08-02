@@ -1,6 +1,6 @@
-# Tidewater Turnkey Solutions - Property Turnover Services Website
+# Dead Bolt, Inc. - Property Preservation & REO Turnover Website
 
-A lightweight, performant, mobile-responsive business profile website for **Tidewater Turnkey Solutions** (or **Turnkey Home Solutions**), built with **Astro**, **Tailwind CSS v4**, and configured for **Cloudflare Pages** deployment.
+A lightweight, performant, mobile-responsive business profile website for **Dead Bolt, Inc.**, built with **Astro**, **Tailwind CSS v4**, and configured for **Cloudflare Pages** deployment.
 
 ---
 
@@ -9,29 +9,29 @@ A lightweight, performant, mobile-responsive business profile website for **Tide
 * **Framework:** [Astro](https://astro.build/) (v5 / SSG Static Mode)
 * **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) with `@tailwindcss/vite`
 * **Deployment Adapter:** `@astrojs/cloudflare` (Workerd runtime integration for Cloudflare Pages)
-* **Design System:** Deep Navy (`#0F172A`, `#1E293B`) & Accent Gold (`#C59B27`, `#EAAA00`) palette with glassmorphism overlays and micro-animations.
-* **Configuration:** Centralized site configuration in `src/config/site.ts` for instant brand/content toggling.
+* **Design System:** Heavy Industrial Slate (`#1E293B`), Gunmetal (`#334155`), Safety Amber (`#EA580C`), and Tactical Brass (`#B45309`) palette with glassmorphism overlays and job site micro-animations.
+* **Configuration:** Centralized site configuration in `src/config/site.ts` for instant brand and content toggling.
 
 ---
 
 ## 🛠️ Project Structure
 
 ```text
-turnkey/
+deadbolt/
 ├── public/
-│   ├── favicon.svg             # Key/house logo favicon
-│   └── images/                 # Generated high-res property & avatar assets
+│   ├── favicon.svg             # Deadbolt lock logo favicon
+│   └── images/                 # High-res property & leadership assets
 ├── src/
 │   ├── config/
 │   │   └── site.ts             # Central brand metadata & service definitions
 │   ├── components/
-│   │   ├── Navbar.astro        # Top announcement bar, logo, and mobile menu
+│   │   ├── Navbar.astro        # Top utility bar, logo, and mobile menu
 │   │   ├── Hero.astro          # Full-width interior overlay hero section
-│   │   ├── Services.astro      # Services container section
-│   │   ├── ServiceCard.astro   # Elevated service card component
-│   │   ├── Advantage.astro     # Turnkey advantage 2x2 grid & Navy Veteran owner card
-│   │   ├── QuoteForm.astro     # Interactive turnover quote request form
-│   │   └── Footer.astro        # Dark navy footer with contact details & dynamic year
+│   │   ├── Services.astro      # 6 Core Property Preservation services container
+│   │   ├── ServiceCard.astro   # Elevated service card component with custom SVGs
+│   │   ├── Advantage.astro     # Dead Bolt advantage 2x2 grid & leadership card
+│   │   ├── QuoteForm.astro     # Interactive preservation quote request form
+│   │   └── Footer.astro        # Dark slate footer with contact details & dynamic year
 │   ├── layouts/
 │   │   └── Layout.astro        # Master HTML layout & SEO metadata
 │   ├── pages/
@@ -47,24 +47,24 @@ turnkey/
 
 ## ⚙️ Central Brand Configuration (`src/config/site.ts`)
 
-All business metadata, contact details, service features, and navigation links can be easily edited or toggled in a single location:
+All business metadata, contact details, service features, and navigation links can be easily edited in a single location:
 
 ```typescript
 export const siteConfig = {
-  name: "Tidewater Turnkey Solutions",
-  altNames: ["Turnkey Home Solutions", "Tidewater Turnkey Solutions"],
-  tagline: "Premium Make-Ready & Rental Turnover Services for Hampton Roads Property Managers",
+  name: "Dead Bolt, Inc.",
+  altNames: ["Dead Bolt Inc.", "Dead Bolt Property Preservation", "Dead Bolt REO Services"],
+  tagline: "Full-Service Property Preservation & Trash-Outs in Hampton Roads",
   location: {
-    city: "Windsor",
+    city: "Virginia Beach",
     state: "VA",
-    zip: "23487",
-    full: "Windsor, VA 23487"
+    zip: "23452",
+    full: "Hampton Roads, VA"
   },
   contact: {
     phone: "(757) 555-0101",
-    email: "info@tidewaterTurnkey.com"
+    email: "info@757deadbolt.com"
   },
-  badgeText: "VETERAN-OWNED BUSINESS",
+  badgeText: "SECURED. CLEANED. PRESERVED.",
   // ...
 };
 ```
@@ -94,17 +94,7 @@ npm run build
 
 ## ☁️ Deploying to Cloudflare Pages
 
-### Option A: Direct Git Integration (Recommended)
-1. Push your repository to GitHub or GitLab.
-2. Log into the [Cloudflare Dashboard](https://dash.cloudflare.com/) and navigate to **Workers & Pages**.
-3. Select **Create application** > **Pages** > **Connect to Git**.
-4. Configure build settings:
-   - **Framework Preset:** `Astro`
-   - **Build Command:** `npm run build`
-   - **Build Output Directory:** `dist`
-   - **Environment Variable:** `NODE_VERSION = 22`
-
-### Option B: Direct Deployment via Wrangler CLI
+### Direct Deployment via Wrangler CLI
 ```bash
-npx wrangler pages deploy dist --project-name=tidewater-Turnkey-solutions
+npx wrangler pages deploy dist --project-name=deadbolt
 ```

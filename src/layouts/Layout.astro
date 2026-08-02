@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { 
-  title = `${siteConfig.name} | Property Turnover & Make-Ready Services`,
+  title = `${siteConfig.name} | Property Preservation & REO Services`,
   description = siteConfig.tagline
 } = Astro.props;
 ---
@@ -25,22 +25,14 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="author" content={siteConfig.name} />
-    <meta name="keywords" content="turnover services, make-ready, property management, Hampton Roads, Windsor VA, rental turnover, paint patch, turnover cleaning" />
+    <meta name="keywords" content="Dead Bolt Inc, property preservation, REO trash-outs, lockouts, rekeying, eviction cleanouts, yard abatement, winterization, Hampton Roads, Virginia Beach" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-
-    <!-- Google Fonts: Inter & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" 
-      rel="stylesheet" 
-    />
   </head>
-  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col antialiased selection:bg-amber-500 selection:text-white">
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-orange-600 selection:text-white">
     <slot />
   </body>
 </html>
